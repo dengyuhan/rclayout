@@ -2,12 +2,12 @@ package com.gcssloop.roundcornerlayouttest;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.SeekBar;
 
 import com.dyhdyh.support.rclayout.CheckRCRelativeLayout;
-import com.gcssloop.widget.RCRelativeLayout;
 
 public class ExampleActivity extends AppCompatActivity {
     CheckRCRelativeLayout layout;
@@ -30,6 +30,12 @@ public class ExampleActivity extends AppCompatActivity {
         seekbar_radius_bottom_left = (SeekBar) findViewById(R.id.seekbar_radius_bottom_left);
         seekbar_radius_bottom_right = (SeekBar) findViewById(R.id.seekbar_radius_bottom_right);
 
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                layout.toggle();
+            }
+        });
         //圆形
         cb_circle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

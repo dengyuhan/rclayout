@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CheckRCRelativeLayout">
+        <attr name="android_checked" />
+        <attr name="stroke_color" />
+    </declare-styleable>
+</resources>

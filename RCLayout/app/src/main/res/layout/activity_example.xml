@@ -11,7 +11,7 @@
         android:layout_width="@dimen/size_example_image"
         android:layout_height="@dimen/size_example_image"
         android:layout_centerHorizontal="true"
-        app:stroke_color="@color/colorPrimary">
+        app:stroke_color="@drawable/selector_stroke_color">
 
         <ImageView
             android:layout_width="match_parent"
