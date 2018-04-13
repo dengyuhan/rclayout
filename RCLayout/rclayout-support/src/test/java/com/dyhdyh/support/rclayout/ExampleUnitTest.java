@@ -1,5 +1,5 @@
 /*
- * Copyright 2017 GcsSloop
+ * Copyright 2018 GcsSloop
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,11 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Last modified 2017-09-11 15:15:32
+ * Last modified 2018-04-13 16:55:12
  *
  * GitHub: https://github.com/GcsSloop
  * WeiBo: http://weibo.com/GcsSloop
  * WebSite: http://www.gcssloop.com
  */
 
-include ':app', ':rclayout', ':rclayout-support'
+package com.dyhdyh.support.rclayout;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ */
+public class ExampleUnitTest {
+    @Test
+    public void addition_isCorrect() throws Exception {
+        assertEquals(4, 2 + 2);
+    }
+}

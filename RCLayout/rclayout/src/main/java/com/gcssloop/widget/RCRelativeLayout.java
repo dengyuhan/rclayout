@@ -36,7 +36,7 @@ import com.gcssloop.widget.helper.RCHelper;
  * 作者：GcsSloop
  */
 public class RCRelativeLayout extends RelativeLayout {
-    RCHelper mRCHelper;
+    protected RCHelper mRCHelper;
 
     public RCRelativeLayout(Context context) {
         this(context, null);
