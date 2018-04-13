@@ -30,7 +30,14 @@ ext {
                     authorName  : "dengyuhan",
                     authorEmail : "22309946@qq.com",
 
-
+                    //开源协议
+                    licenses    : {
+                        license {
+                            name 'Apache-2.0'
+                            url 'https://opensource.org/licenses/Apache-2.0'
+                        }
+                    },
+                    licenseName : 'Apache-2.0'
             ]
 
 
