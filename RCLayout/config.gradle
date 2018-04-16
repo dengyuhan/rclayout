@@ -2,8 +2,8 @@ ext {
     android =
             [
                     //版本号
-                    versionCode      : 1,
-                    versionName      : "1.5.2.0",
+                    versionCode      : 19,
+                    versionName      : "1.5.5",
 
                     //sdk版本
                     compileSdkVersion: 26,
@@ -17,18 +17,17 @@ ext {
             [
                     //项目名称
                     name        : "rclayout",
-                    name_support: "rclayout-support",
-                    groupId     : "com.dyhdyh",
+                    groupId     : "com.gcssloop.widget",
                     //项目地址
-                    siteUrl     : "https://github.com/dengyuhan/rclayout",
+                    siteUrl     : "https://github.com/GcsSloop/rclayout",
                     //项目git地址
-                    gitUrl      : "https://github.com/dengyuhan/rclayout.git",
+                    gitUrl      : "https://github.com/GcsSloop/rclayout.git",
                     //项目描述
-                    description : "基于GcsSloop/rclayout的一些扩展",
+                    description : "Android通用圆角布局",
                     //开发者的一些基本信息
-                    authorId    : "dengyuhan",
-                    authorName  : "dengyuhan",
-                    authorEmail : "22309946@qq.com",
+                    authorId    : "GcsSloop",
+                    authorName  : "GcsSloop",
+                    authorEmail : "GcsSloop@gmail.com",
 
                     //开源协议
                     licenses    : {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Last modified 2018-03-20 17:09:03
+ * Last modified 2018-04-13 23:18:02
  *
  * GitHub: https://github.com/GcsSloop
  * WeiBo: http://weibo.com/GcsSloop
@@ -24,6 +24,7 @@ package com.gcssloop.widget.helper;
 
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -39,12 +40,17 @@ import android.view.View;
 
 import com.gcssloop.rclayout.R;
 
+/**
+ * 作用：圆角辅助工具
+ * 作者：GcsSloop
+ */
 public class RCHelper {
     public float[] radii = new float[8];   // top-left, top-right, bottom-right, bottom-left
     public Path mClipPath;                 // 剪裁区域路径
     public Paint mPaint;                   // 画笔
     public boolean mRoundAsCircle = false; // 圆形
     public int mStrokeColor;               // 描边颜色
+    public ColorStateList mStrokeColorStateList;// 描边颜色的状态
     public int mStrokeWidth;               // 描边半径
     public boolean mClipBackground;        // 是否剪裁背景
     public Region mAreaRegion;             // 内容区域
@@ -54,7 +60,8 @@ public class RCHelper {
     public void initAttrs(Context context, AttributeSet attrs) {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.RCAttrs);
         mRoundAsCircle = ta.getBoolean(R.styleable.RCAttrs_round_as_circle, false);
-        mStrokeColor = ta.getColor(R.styleable.RCAttrs_stroke_color, Color.WHITE);
+        mStrokeColor = Color.WHITE;
+        mStrokeColorStateList = ta.getColorStateList(R.styleable.RCAttrs_stroke_color);
         mStrokeWidth = ta.getDimensionPixelSize(R.styleable.RCAttrs_stroke_width, 0);
         mClipBackground = ta.getBoolean(R.styleable.RCAttrs_clip_background, false);
         int roundCorner = ta.getDimensionPixelSize(R.styleable.RCAttrs_round_corner, 0);
@@ -80,6 +87,7 @@ public class RCHelper {
         radii[6] = roundCornerBottomLeft;
         radii[7] = roundCornerBottomLeft;
 
+        mLayer = new RectF();
         mClipPath = new Path();
         mAreaRegion = new Region();
         mPaint = new Paint();
@@ -88,7 +96,13 @@ public class RCHelper {
     }
 
     public void onSizeChanged(View view, int w, int h) {
-        mLayer = new RectF(0, 0, w, h);
+        mLayer.set(0, 0, w, h);
+        refreshRegion(view);
+    }
+
+    public void refreshRegion(View view) {
+        int w = (int) mLayer.width();
+        int h = (int) mLayer.height();
         RectF areas = new RectF();
         areas.left = view.getPaddingLeft();
         areas.top = view.getPaddingTop();

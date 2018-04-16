@@ -24,5 +24,4 @@ dependencies {
     implementation "com.android.support:appcompat-v7:$rootProject.ext.android.supportVersion"
 
     implementation project(':rclayout')
-    implementation project(':rclayout-support')
 }
