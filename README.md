@@ -1,5 +1,7 @@
 # RCLayout(圆角布局)
 
+![GitHub followers](https://img.shields.io/github/followers/gcssloop.svg?style=social&label=Follow)
+
 Android 通用圆角布局，快速实现圆角需求。
 
 之前做项目的时候有圆角相关需求，在网上找了很多方案都不够满意，于是自己做了一个，目前已经使用了一段时间，更新了多个版本，我遇到的问题都进行了修复，并且添加了很多方便的可配置属性，以满足不同需求。
@@ -117,7 +119,7 @@ allprojects {
 在需要添加依赖的 Module 下添加以下信息，使用方式和普通的远程仓库一样。
 
 ```groovy
-implementation 'com.gcssloop.widget:rclayout:1.5.4'
+implementation 'com.gcssloop.widget:rclayout:1.6.0'
 ```
 
 
@@ -129,7 +131,15 @@ implementation 'com.gcssloop.widget:rclayout:1.5.4'
 
 <a href="http://www.gcssloop.com/info/about/" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300"/> </a>
 
+## 感谢
+
+感谢 [![](https://avatars1.githubusercontent.com/u/17588779?s=50&v=4)](https://github.com/dengyuhan) 贡献的代码。
+
 ## 更新日志
+
+#### v1.6.0
+
+描边颜色支持 seletor。
 
 #### v1.5.4
 
