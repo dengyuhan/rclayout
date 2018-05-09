@@ -2,8 +2,8 @@ ext {
     android =
             [
                     //版本号
-                    versionCode      : 19,
-                    versionName      : "1.5.5",
+                    versionCode      : 21,
+                    versionName      : "1.6.0.0",
 
                     //sdk版本
                     compileSdkVersion: 26,
@@ -16,27 +16,27 @@ ext {
     jcenter =
             [
                     //项目名称
-                    name        : "rclayout",
-                    groupId     : "com.gcssloop.widget",
+                    name       : "rclayout",
+                    groupId    : "com.gcssloop.widget",
                     //项目地址
-                    siteUrl     : "https://github.com/GcsSloop/rclayout",
+                    siteUrl    : "https://github.com/GcsSloop/rclayout",
                     //项目git地址
-                    gitUrl      : "https://github.com/GcsSloop/rclayout.git",
+                    gitUrl     : "https://github.com/GcsSloop/rclayout.git",
                     //项目描述
-                    description : "Android通用圆角布局",
+                    description: "Android通用圆角布局",
                     //开发者的一些基本信息
-                    authorId    : "GcsSloop",
-                    authorName  : "GcsSloop",
-                    authorEmail : "GcsSloop@gmail.com",
+                    authorId   : "GcsSloop",
+                    authorName : "GcsSloop",
+                    authorEmail: "GcsSloop@gmail.com",
 
                     //开源协议
-                    licenses    : {
+                    licenses   : {
                         license {
                             name 'Apache-2.0'
                             url 'https://opensource.org/licenses/Apache-2.0'
                         }
                     },
-                    licenseName : 'Apache-2.0'
+                    licenseName: 'Apache-2.0'
             ]
 
 
