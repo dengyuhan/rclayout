@@ -3,7 +3,7 @@ ext {
             [
                     //版本号
                     versionCode      : 21,
-                    versionName      : "1.6.0.0",
+                    versionName      : "1.6.0",
 
                     //sdk版本
                     compileSdkVersion: 26,
