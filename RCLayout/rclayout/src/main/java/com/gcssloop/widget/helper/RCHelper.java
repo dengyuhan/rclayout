@@ -35,16 +35,11 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.graphics.Region;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.StateListDrawable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.widget.Checkable;
 
 import com.gcssloop.rclayout.R;
-import com.gcssloop.widget.RCRelativeLayout;
 
 import java.util.ArrayList;
 
@@ -63,7 +58,7 @@ public class RCHelper {
     public int mStrokeWidth;               // 描边半径
     public boolean mClipBackground;        // 是否剪裁背景
     public Region mAreaRegion;             // 内容区域
-    public int mEdgeFix = 10;              // 边缘修复
+    public int mEdgeFix = 0;              // 边缘修复
     public RectF mLayer;                   // 画布图层大小
 
     public void initAttrs(Context context, AttributeSet attrs) {
