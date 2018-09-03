@@ -24,6 +24,7 @@ package com.gcssloop.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.Checkable;
@@ -52,6 +53,10 @@ public class RCRelativeLayout extends RelativeLayout implements Checkable, RCAtt
         super(context, attrs, defStyleAttr);
         mRCHelper = new RCHelper();
         mRCHelper.initAttrs(context, attrs);
+
+        if (mRCHelper.mClipBackground && getBackground() == null) {
+            setBackgroundColor(Color.TRANSPARENT);
+        }
     }
 
     @Override

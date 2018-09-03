@@ -73,7 +73,7 @@ public class RCHelper {
             mDefaultStrokeColor = Color.WHITE;
         }
         mStrokeWidth = ta.getDimensionPixelSize(R.styleable.RCAttrs_stroke_width, 0);
-        mClipBackground = ta.getBoolean(R.styleable.RCAttrs_clip_background, false);
+        mClipBackground = ta.getBoolean(R.styleable.RCAttrs_clip_background, true);
         int roundCorner = ta.getDimensionPixelSize(R.styleable.RCAttrs_round_corner, 0);
         int roundCornerTopLeft = ta.getDimensionPixelSize(
                 R.styleable.RCAttrs_round_corner_top_left, roundCorner);
