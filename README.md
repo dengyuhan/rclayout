@@ -1,16 +1,16 @@
 # RCLayout(圆角布局)
 
-![GitHub followers](https://img.shields.io/github/followers/gcssloop.svg?style=social&label=Follow)
-
 Android 通用圆角布局，快速实现圆角需求。
 
 之前做项目的时候有圆角相关需求，在网上找了很多方案都不够满意，于是自己做了一个，目前已经使用了一段时间，更新了多个版本，我遇到的问题都进行了修复，并且添加了很多方便的可配置属性，以满足不同需求。
 
-**相关原理解析： [雕虫晓技 · 通用圆角布局全解析(v1.4.7)](http://www.gcssloop.com/gebug/rclayout)**
+**相关原理解析： [雕虫晓技 · 通用圆角布局全解析](http://www.gcssloop.com/gebug/rclayout)**
 
 ## 效果预览
 
-<img src="http://ww1.sinaimg.cn/large/005Xtdi2gy1fqbgk8pmevg309u0ghwz9.gif" width="300"/> <img src="https://ww4.sinaimg.cn/large/006tKfTcly1fk7twywj5oj30u01fewka.jpg" width="294"/>
+<p>
+<img src="http://ww1.sinaimg.cn/large/005Xtdi2gy1fqbgk8pmevg309u0ghwz9.gif" width="300"/> <img src="https://ww4.sinaimg.cn/large/006tKfTcly1fk7twywj5oj30u01fewka.jpg" width="292"/>
+</p>
 
 ## 支持的特性
 
@@ -119,7 +119,7 @@ allprojects {
 在需要添加依赖的 Module 下添加以下信息，使用方式和普通的远程仓库一样。
 
 ```groovy
-implementation 'com.gcssloop.widget:rclayout:1.6.0'
+implementation 'com.gcssloop.widget:rclayout:1.7.0'
 ```
 
 
@@ -133,9 +133,17 @@ implementation 'com.gcssloop.widget:rclayout:1.6.0'
 
 ## 感谢
 
-感谢 [![](https://avatars1.githubusercontent.com/u/17588779?s=50&v=4)](https://github.com/dengyuhan) 贡献的代码。
+感谢 [![img](https://avatars1.githubusercontent.com/u/17588779?s=50&v=4)](https://github.com/dengyuhan) 贡献的代码。
 
 ## 更新日志
+
+#### v1.7.0
+
+修复代码中圆角设置错误问题。
+
+#### v1.6.1
+
+解决 Android 9 上圆角策略失效问题。
 
 #### v1.6.0
 
