@@ -43,3 +43,4 @@ ext {
 
 // 上传脚本，加入了自动配置策略
 apply from: "http://plugin.gcssloop.com/gcs-upload.gradle"
+apply from: "bintray.gradle"

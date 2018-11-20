@@ -1,0 +1,36 @@
+ext {
+    android =
+            [
+                    //版本号
+                    versionCode      : 23,
+                    versionName      : "1.8.1",
+            ]
+
+    jcenter =
+            [
+                    //项目名称
+                    name       : "rclayout-jcenter",
+                    groupId    : "com.gcssloop.widget.jcenter",
+                    //项目地址
+                    siteUrl    : "https://github.com/GcsSloop/rclayout",
+                    //项目git地址
+                    gitUrl     : "https://github.com/GcsSloop/rclayout.git",
+                    //项目描述
+                    description: "● Android通用圆角布局。",
+                    //开发者的一些基本信息
+                    authorId   : "GcsSloop",
+                    authorName : "GcsSloop",
+                    authorEmail: "GcsSloop@gmail.com",
+
+                    //开源协议
+                    licenses   : {
+                        license {
+                            name 'Apache-2.0'
+                            url 'https://opensource.org/licenses/Apache-2.0'
+                        }
+                    },
+                    licenseName: 'Apache-2.0'
+            ]
+
+
+}
